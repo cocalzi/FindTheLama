@@ -3,21 +3,23 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="" />
+  <link rel="icon" type="" href="" />
   <!--Google Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>impostor</title>
-  <script type="module" crossorigin src="./assets/index-DqpIYgrs.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-0wyQ_0rl.css">
+  <script type="module" crossorigin src="./assets/index-DiNkisME.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DkzNAdDG.css">
 </head>
 
 <body>
   <main>
     <section id="home">
-      <h1>Home screen</h1>
+      <header>
+        <h1>Benvenuto</h1>
+      </header>
       <div class="homescreen-container">
         <img src="./assets/FindTheLama3-Da2zaiq8.png">
       </div>
@@ -26,11 +28,34 @@
       </div>
     </section>
     <section id="choosePlayers">
-      <h1>Set the play</h1>
-      <div class="choosePlayers-container">
+      <header>
+        <h1>Configura la partita</h1>
+      </header>
+      <div id="choosePlayerContainer" class="choosePlayers-container">
+        <label>Numero giocatori:</label>
+        <div class="lama-number-container">
+          <input id="inputPlayersNumber" type="number"><button id="generatePlayersInputBtn"
+            class="generatePlayer-style">Genera</button>
+        </div>
+        <label>Numero Lama:</label>
+        <div class="lama-number-container">
+          <button id="decrease" class="plusminus-style">-</button><input id="lamasInput" type="number" readonly><button
+            id="increase" class="plusminus-style">+</button>
+        </div>
       </div>
       <div class="button-container">
-        <button id="btnHome" class="button">Gioca</button>
+        <button id="btnPlay" class="button">Gioca</button>
+      </div>
+    </section>
+    <section id="showCards">
+      <header>
+        <h1>Guarda la parola</h1>
+      </header>
+      <div class="homescreen-container">
+
+      </div>
+      <div class="button-container">
+        <button id="btnHome" class="button">Giocatore successivo</button>
       </div>
     </section>
   </main>
