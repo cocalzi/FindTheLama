@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>impostor</title>
-  <script type="module" crossorigin src="./assets/index-DiNkisME.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DkzNAdDG.css">
+  <title>Lama</title>
+  <script type="module" crossorigin src="./assets/index-IIbZDlDQ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BiBGJwIU.css">
 </head>
 
 <body>
@@ -52,10 +52,30 @@
         <h1>Guarda la parola</h1>
       </header>
       <div class="homescreen-container">
-
+        <div class="card-container">
+          <h2 id="playerName">Giocatore</h2>
+          <div id="wordContainer" class="wordContainer-style">
+            <p id="initialPhrase"></p>
+            <h1 id="playerWord">Parola</h1>
+          </div>
+          <div class="showWordBtn-container-style">
+            <button id="showWordBtn">Rivela</button>
+        </div>
+      </div>
       </div>
       <div class="button-container">
-        <button id="btnHome" class="button">Giocatore successivo</button>
+        <button id="nextPlayerBtn" class="button">Giocatore successivo</button>
+      </div>
+    </section>
+    <section id="finalScreen">
+      <header>
+        <h1>Gioca</h1>
+      </header>
+      <div class="homescreen-container">
+      </div>
+      <div class="button-container">
+        <button id="btnPlayAgain" class="button">Inizia nuova partita</button>
+        <button id="setPlayersAgain" class="button">Reimposta giocatori</button>
       </div>
     </section>
   </main>
